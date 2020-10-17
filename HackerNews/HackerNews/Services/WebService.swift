@@ -23,7 +23,6 @@ class WebService {
             .receive(on: RunLoop.main)
             .map(\.data)
             .decode(type: Story.self, decoder: JSONDecoder())
-            .catch { _ in Empty<Story, Error>() }
             .eraseToAnyPublisher()
 
     }

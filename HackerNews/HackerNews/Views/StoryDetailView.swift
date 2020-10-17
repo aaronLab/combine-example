@@ -6,15 +6,25 @@
 //
 
 import SwiftUI
+import Combine
 
 struct StoryDetailView: View {
+    
+    @ObservedObject private var storyDetailVM: StoryDetailViewModel
+    
+    init(storyId: Int) {
+        self.storyDetailVM = StoryDetailViewModel(storyId: storyId)
+    }
+    
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text(self.storyDetailVM.title)
+        }
     }
 }
 
 struct StoryDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        StoryDetailView()
+        StoryDetailView(storyId: 8863)
     }
 }
