@@ -17,6 +17,9 @@ class StoryListViewModel: ObservableObject {
         fetchTopStories()
     }
     
+    /*
+     Fetch All Stories
+     */
     private func fetchTopStories() {
         
         self.cancellable = WebService().getAllTopStories().map { storyIds in
