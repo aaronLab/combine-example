@@ -16,6 +16,8 @@
 		A4EB9A80253B225A00223234 /* StoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */; };
 		A4EB9A85253B240D00223234 /* StoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A84253B240D00223234 /* StoryListView.swift */; };
 		A4EB9A8B253B278900223234 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A8A253B278900223234 /* Story.swift */; };
+		A4EB9A8F253B296C00223234 /* StoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A8E253B296C00223234 /* StoryDetailView.swift */; };
+		A4EB9A92253B297E00223234 /* StoryDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A91253B297E00223234 /* StoryDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListViewModel.swift; sourceTree = "<group>"; };
 		A4EB9A84253B240D00223234 /* StoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListView.swift; sourceTree = "<group>"; };
 		A4EB9A8A253B278900223234 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		A4EB9A8E253B296C00223234 /* StoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailView.swift; sourceTree = "<group>"; };
+		A4EB9A91253B297E00223234 /* StoryDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */,
+				A4EB9A91253B297E00223234 /* StoryDetailViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				A4EB9A84253B240D00223234 /* StoryListView.swift */,
+				A4EB9A8E253B296C00223234 /* StoryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -188,8 +194,10 @@
 			files = (
 				A4EB9A65253B209E00223234 /* AppDelegate.swift in Sources */,
 				A4EB9A67253B209E00223234 /* SceneDelegate.swift in Sources */,
+				A4EB9A8F253B296C00223234 /* StoryDetailView.swift in Sources */,
 				A4EB9A85253B240D00223234 /* StoryListView.swift in Sources */,
 				A4EB9A80253B225A00223234 /* StoryListViewModel.swift in Sources */,
+				A4EB9A92253B297E00223234 /* StoryDetailViewModel.swift in Sources */,
 				A4EB9A7B253B211800223234 /* WebService.swift in Sources */,
 				A4EB9A8B253B278900223234 /* Story.swift in Sources */,
 			);
