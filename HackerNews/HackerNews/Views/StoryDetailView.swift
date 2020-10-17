@@ -11,15 +11,19 @@ import Combine
 struct StoryDetailView: View {
     
     @ObservedObject private var storyDetailVM: StoryDetailViewModel
+    var storyId: Int
     
     init(storyId: Int) {
-        self.storyDetailVM = StoryDetailViewModel(storyId: storyId)
+        self.storyId = storyId
+        self.storyDetailVM = StoryDetailViewModel()
     }
     
     var body: some View {
         VStack {
             Text(self.storyDetailVM.title)
             WebView(url: storyDetailVM.url)
+        }.onAppear {
+            self.storyDetailVM.fetchStory(storyId: self.storyId)
         }
     }
 }
