@@ -20,7 +20,7 @@ struct StoryListView: View {
                 NavigationLink(
                     destination: StoryDetailView(storyId: storyVM.id),
                     label: {
-                        Text("\(storyVM.id)")
+                        Text("\(storyVM.title)")
                     })
             }
             
