@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A4B61E73253B3266007A1C76 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B61E72253B3266007A1C76 /* WebView.swift */; };
+		A4B61E77253B350B007A1C76 /* WKWebView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B61E76253B350B007A1C76 /* WKWebView+Extensions.swift */; };
 		A4EB9A65253B209E00223234 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A64253B209E00223234 /* AppDelegate.swift */; };
 		A4EB9A67253B209E00223234 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A66253B209E00223234 /* SceneDelegate.swift */; };
 		A4EB9A6B253B209F00223234 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EB9A6A253B209F00223234 /* Assets.xcassets */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A4B61E72253B3266007A1C76 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A4B61E76253B350B007A1C76 /* WKWebView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Extensions.swift"; sourceTree = "<group>"; };
 		A4EB9A61253B209E00223234 /* HackerNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4EB9A64253B209E00223234 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4EB9A66253B209E00223234 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4B61E75253B34FF007A1C76 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4B61E76253B350B007A1C76 /* WKWebView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		A4EB9A58253B209E00223234 = {
 			isa = PBXGroup;
 			children = (
@@ -66,6 +78,7 @@
 		A4EB9A63253B209E00223234 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				A4B61E75253B34FF007A1C76 /* Extensions */,
 				A4EB9A89253B278300223234 /* Models */,
 				A4EB9A83253B23FD00223234 /* Views */,
 				A4EB9A7E253B224200223234 /* View Models */,
@@ -110,6 +123,7 @@
 			children = (
 				A4EB9A84253B240D00223234 /* StoryListView.swift */,
 				A4EB9A8E253B296C00223234 /* StoryDetailView.swift */,
+				A4B61E72253B3266007A1C76 /* WebView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,11 +207,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4EB9A65253B209E00223234 /* AppDelegate.swift in Sources */,
+				A4B61E77253B350B007A1C76 /* WKWebView+Extensions.swift in Sources */,
 				A4EB9A67253B209E00223234 /* SceneDelegate.swift in Sources */,
 				A4EB9A8F253B296C00223234 /* StoryDetailView.swift in Sources */,
 				A4EB9A85253B240D00223234 /* StoryListView.swift in Sources */,
 				A4EB9A80253B225A00223234 /* StoryListViewModel.swift in Sources */,
 				A4EB9A92253B297E00223234 /* StoryDetailViewModel.swift in Sources */,
+				A4B61E73253B3266007A1C76 /* WebView.swift in Sources */,
 				A4EB9A7B253B211800223234 /* WebService.swift in Sources */,
 				A4EB9A8B253B278900223234 /* Story.swift in Sources */,
 			);

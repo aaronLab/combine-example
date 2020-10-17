@@ -42,7 +42,7 @@ extension StoryDetailViewModel {
     }
 
     var url: String {
-        return self.story?.url ?? ""
+        return self.story?.url ?? "https://n.a"
     }
 
 }
