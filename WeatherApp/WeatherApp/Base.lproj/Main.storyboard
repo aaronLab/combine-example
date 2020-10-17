@@ -17,11 +17,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKL-KU-jqu">
-                                <rect key="frame" x="20" y="429" width="374" height="39"/>
+                                <rect key="frame" x="20" y="428.5" width="374" height="39"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1ad-mW-SpJ">
+                                <rect key="frame" x="20" y="378.5" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -29,9 +34,13 @@
                             <constraint firstItem="bKL-KU-jqu" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="1GX-jM-MJU"/>
                             <constraint firstItem="bKL-KU-jqu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="JEP-YG-zMo"/>
                             <constraint firstItem="bKL-KU-jqu" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nk7-Sz-7Fh"/>
+                            <constraint firstItem="1ad-mW-SpJ" firstAttribute="trailing" secondItem="bKL-KU-jqu" secondAttribute="trailing" id="eyI-UI-uKp"/>
+                            <constraint firstItem="bKL-KU-jqu" firstAttribute="top" secondItem="1ad-mW-SpJ" secondAttribute="bottom" constant="16" id="nna-c3-wI4"/>
+                            <constraint firstItem="1ad-mW-SpJ" firstAttribute="leading" secondItem="bKL-KU-jqu" secondAttribute="leading" id="wmw-2U-9HC"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="cityTextField" destination="1ad-mW-SpJ" id="eal-dp-enG"/>
                         <outlet property="temperatureLabel" destination="bKL-KU-jqu" id="l1f-ZC-buI"/>
                     </connections>
                 </viewController>
