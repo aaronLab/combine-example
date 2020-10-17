@@ -22,6 +22,10 @@ class ViewController: UIViewController {
         
         NotificationCenter.default.post(name: notification, object: nil)
         
+        subscription.cancel()
+        
+        NotificationCenter.default.post(name: notification, object: nil)
+        
     }
 
 
