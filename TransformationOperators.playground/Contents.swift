@@ -47,7 +47,7 @@ print()
 struct School {
     let name: String
     let noOfStudents: CurrentValueSubject<Int, Never>
-    
+
     init(name: String, noOfStudents: Int) {
         self.name = name
         self.noOfStudents = CurrentValueSubject(noOfStudents)
@@ -68,3 +68,12 @@ school.value = townSchool
 
 citySchool.noOfStudents.value += 20000
 townSchool.noOfStudents.value += 10
+
+print()
+
+/*
+ replaceNil
+ */
+["A", "B", nil, "C"].publisher.replaceNil(with: "*")
+    .map { $0! }
+    .sink { print($0) }
