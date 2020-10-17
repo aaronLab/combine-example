@@ -1,15 +1,23 @@
 import Foundation
 import Combine
 
-func getPosts() -> AnyPublisher<Data, URLError> {
+struct Post: Codable {
+    let userId: Int
+    let id: Int
+    let title: String
+    let body: String
+}
+
+func getPosts() -> AnyPublisher<[Post], Error> {
 
     guard let url = URL(string: "http://jsonplaceholder.typicode.com/posts") else {
         fatalError("Invalid URL")
     }
 
     return URLSession.shared.dataTaskPublisher(for: url).map { $0.data }
+        .decode(type: [Post].self, decoder: JSONDecoder())
         .eraseToAnyPublisher()
 
 }
 
-let cancellable = getPosts().sink(receiveCompletion: {_ in }, receiveValue: { print($0) })
+let cancellable = getPosts().sink(receiveCompletion: { _ in }, receiveValue: { print($0) })
