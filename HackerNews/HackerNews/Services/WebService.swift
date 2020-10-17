@@ -9,6 +9,8 @@ import Foundation
 import Combine
 
 class WebService {
+    
+    
 
     func getAllTopStories() -> AnyPublisher<[Int], Error> {
 

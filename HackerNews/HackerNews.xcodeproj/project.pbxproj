@@ -14,6 +14,7 @@
 		A4EB9A6E253B209F00223234 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4EB9A6D253B209F00223234 /* Preview Assets.xcassets */; };
 		A4EB9A71253B209F00223234 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4EB9A6F253B209F00223234 /* LaunchScreen.storyboard */; };
 		A4EB9A7B253B211800223234 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A7A253B211800223234 /* WebService.swift */; };
+		A4EB9A80253B225A00223234 /* StoryListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A4EB9A70253B209F00223234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4EB9A72253B209F00223234 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EB9A7A253B211800223234 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		A4EB9A63253B209E00223234 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				A4EB9A7E253B224200223234 /* View Models */,
 				A4EB9A79253B210C00223234 /* Services */,
 				A4EB9A64253B209E00223234 /* AppDelegate.swift */,
 				A4EB9A66253B209E00223234 /* SceneDelegate.swift */,
@@ -84,6 +87,14 @@
 				A4EB9A7A253B211800223234 /* WebService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		A4EB9A7E253B224200223234 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				A4EB9A7F253B225A00223234 /* StoryListViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +169,7 @@
 			files = (
 				A4EB9A65253B209E00223234 /* AppDelegate.swift in Sources */,
 				A4EB9A67253B209E00223234 /* SceneDelegate.swift in Sources */,
+				A4EB9A80253B225A00223234 /* StoryListViewModel.swift in Sources */,
 				A4EB9A7B253B211800223234 /* WebService.swift in Sources */,
 				A4EB9A69253B209E00223234 /* ContentView.swift in Sources */,
 			);
