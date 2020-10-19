@@ -14,15 +14,15 @@ class ViewController: UIViewController {
         
         let notification = Notification.Name("Notification")
         
-        let center = NotificationCenter.default
+        let publisher = NotificationCenter.default.publisher(for: notification, object: nil)
         
-        let observer = center.addObserver(forName: notification, object: nil, queue: nil) { notification in
+        let subscription = publisher.sink { _ in
             print("Notification Received")
         }
         
-        center.post(name: notification, object: nil)
+        NotificationCenter.default.post(name: notification, object: nil)
         
-        center.removeObserver(observer)
+        subscription.cancel()
         
     }
 
