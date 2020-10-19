@@ -24,6 +24,7 @@
 		A40C7B03253DD0D900085DE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A40C7B06253DD0D900085DE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A40C7B08253DD0D900085DE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A40C7B0F253DD50E00085DE6 /* Implement Subscriber.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Implement Subscriber.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +60,7 @@
 				A40C7AFA253DD0D800085DE6 /* AppDelegate.swift */,
 				A40C7AFC253DD0D800085DE6 /* SceneDelegate.swift */,
 				A40C7AFE253DD0D800085DE6 /* ViewController.swift */,
+				A40C7B0F253DD50E00085DE6 /* Implement Subscriber.playground */,
 				A40C7B00253DD0D800085DE6 /* Main.storyboard */,
 				A40C7B03253DD0D900085DE6 /* Assets.xcassets */,
 				A40C7B05253DD0D900085DE6 /* LaunchScreen.storyboard */,
