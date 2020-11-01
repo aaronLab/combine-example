@@ -12,6 +12,12 @@
 		A4B2AF9A254E7899009E015D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B2AF99254E7899009E015D /* Assets.xcassets */; };
 		A4B2AF9D254E7899009E015D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4B2AF9C254E7899009E015D /* Preview Assets.xcassets */; };
 		A4B2AFAA254E78EB009E015D /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFA9254E78EB009E015D /* ToDo.swift */; };
+		A4B2AFAE254E7988009E015D /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFAD254E7988009E015D /* APIService.swift */; };
+		A4B2AFB1254E79FE009E015D /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFB0254E79FE009E015D /* RequestBuilder.swift */; };
+		A4B2AFB4254E7A1C009E015D /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFB3254E7A1C009E015D /* APIError.swift */; };
+		A4B2AFB7254E7A6A009E015D /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFB6254E7A6A009E015D /* APISession.swift */; };
+		A4B2AFBC254E7F54009E015D /* ToDoEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFBB254E7F54009E015D /* ToDoEndpoint.swift */; };
+		A4B2AFC0254E8011009E015D /* ToDoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B2AFBF254E8011009E015D /* ToDoService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		A4B2AF9C254E7899009E015D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A4B2AF9E254E7899009E015D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B2AFA9254E78EB009E015D /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		A4B2AFAD254E7988009E015D /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		A4B2AFB0254E79FE009E015D /* RequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		A4B2AFB3254E7A1C009E015D /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		A4B2AFB6254E7A6A009E015D /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		A4B2AFBB254E7F54009E015D /* ToDoEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEndpoint.swift; sourceTree = "<group>"; };
+		A4B2AFBF254E8011009E015D /* ToDoService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,11 +66,11 @@
 		A4B2AF94254E7898009E015D /* ToDos */ = {
 			isa = PBXGroup;
 			children = (
-				A4B2AFAC254E7929009E015D /* Service */,
 				A4B2AFA5254E78AD009E015D /* Application */,
 				A4B2AFA6254E78C1009E015D /* View */,
 				A4B2AFA8254E78CC009E015D /* ViewModels */,
 				A4B2AFA7254E78C7009E015D /* Models */,
+				A4B2AFAC254E7929009E015D /* Service */,
 				A4B2AF9B254E7899009E015D /* Preview Content */,
 			);
 			path = ToDos;
@@ -108,8 +120,22 @@
 		A4B2AFAC254E7929009E015D /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				A4B2AFBA254E7F49009E015D /* ToDoService */,
+				A4B2AFAD254E7988009E015D /* APIService.swift */,
+				A4B2AFB6254E7A6A009E015D /* APISession.swift */,
+				A4B2AFB3254E7A1C009E015D /* APIError.swift */,
+				A4B2AFB0254E79FE009E015D /* RequestBuilder.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A4B2AFBA254E7F49009E015D /* ToDoService */ = {
+			isa = PBXGroup;
+			children = (
+				A4B2AFBB254E7F54009E015D /* ToDoEndpoint.swift */,
+				A4B2AFBF254E8011009E015D /* ToDoService.swift */,
+			);
+			path = ToDoService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,9 +207,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B2AFC0254E8011009E015D /* ToDoService.swift in Sources */,
+				A4B2AFB1254E79FE009E015D /* RequestBuilder.swift in Sources */,
 				A4B2AFAA254E78EB009E015D /* ToDo.swift in Sources */,
 				A4B2AF98254E7898009E015D /* ContentView.swift in Sources */,
+				A4B2AFAE254E7988009E015D /* APIService.swift in Sources */,
+				A4B2AFBC254E7F54009E015D /* ToDoEndpoint.swift in Sources */,
 				A4B2AF96254E7898009E015D /* ToDosApp.swift in Sources */,
+				A4B2AFB4254E7A1C009E015D /* APIError.swift in Sources */,
+				A4B2AFB7254E7A6A009E015D /* APISession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
