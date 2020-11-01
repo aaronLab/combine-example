@@ -7,9 +7,12 @@
 
 import Foundation
 
-struct ToDo: Decodable, Identifiable {
+struct ToDo: Decodable {
     let userId: Int
-    let id: Int
     let title: String
     let completed: Bool
+}
+
+extension ToDo: Identifiable {
+    var id: UUID { return UUID() }
 }

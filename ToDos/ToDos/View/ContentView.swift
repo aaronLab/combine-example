@@ -8,9 +8,17 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var viewModel = ToDoListViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(viewModel.todos) { todo in
+            Text(todo.title)
+        }.onAppear {
+            
+            viewModel.getToDoList()
+            
+        }
     }
 }
 
