@@ -8,6 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    init() {
+        print(Env().getAPIKey())
+    }
+    
     var body: some View {
         Text("Hello, world!")
             .padding()

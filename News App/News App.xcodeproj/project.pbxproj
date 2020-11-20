@@ -15,6 +15,8 @@
 		A4B34FF12567F4D000796114 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4B34FEF2567F4D000796114 /* LaunchScreen.storyboard */; };
 		A4B34FFC2567F4D000796114 /* News_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B34FFB2567F4D000796114 /* News_AppTests.swift */; };
 		A4B350072567F4D000796114 /* News_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B350062567F4D000796114 /* News_AppUITests.swift */; };
+		A4B350202567F6A000796114 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3501F2567F6A000796114 /* Env.swift */; };
+		A4B350282567F84700796114 /* env.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4B350272567F84700796114 /* env.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A4B350022567F4D000796114 /* News AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "News AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B350062567F4D000796114 /* News_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News_AppUITests.swift; sourceTree = "<group>"; };
 		A4B350082567F4D000796114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4B3501F2567F6A000796114 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		A4B350272567F84700796114 /* env.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 				A4B34FEA2567F4D000796114 /* Assets.xcassets */,
 				A4B34FEF2567F4D000796114 /* LaunchScreen.storyboard */,
 				A4B34FF22567F4D000796114 /* Info.plist */,
+				A4B350272567F84700796114 /* env.txt */,
+				A4B3501F2567F6A000796114 /* Env.swift */,
 			);
 			name = Application;
 			sourceTree = "<group>";
@@ -273,6 +279,7 @@
 			files = (
 				A4B34FF12567F4D000796114 /* LaunchScreen.storyboard in Resources */,
 				A4B34FEE2567F4D000796114 /* Preview Assets.xcassets in Resources */,
+				A4B350282567F84700796114 /* env.txt in Resources */,
 				A4B34FEB2567F4D000796114 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B34FE52567F4CF00796114 /* AppDelegate.swift in Sources */,
+				A4B350202567F6A000796114 /* Env.swift in Sources */,
 				A4B34FE72567F4CF00796114 /* SceneDelegate.swift in Sources */,
 				A4B34FE92567F4CF00796114 /* ContentView.swift in Sources */,
 			);
