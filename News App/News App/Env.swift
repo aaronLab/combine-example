@@ -7,9 +7,9 @@
 
 import Foundation
 
-final class Env {
+struct Env {
     
-    func getAPIKey() -> String {
+    static func getAPIKey() -> String {
         let path = Bundle.main.path(forResource: "env", ofType: "txt")
         let apiKey = try? String(contentsOfFile: path!, encoding: String.Encoding.utf8)
         return apiKey ?? ""
