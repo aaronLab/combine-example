@@ -9,13 +9,16 @@ import SwiftUI
 
 struct ContentView: View {
     
+    @ObservedObject private var viewModel = NewsListVM()
+    
     init() {
-        print(API.key)
+        viewModel.load()
     }
     
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        List(viewModel.news, id: \.url) { news in
+            Text(news.title)
+        }
     }
 }
 

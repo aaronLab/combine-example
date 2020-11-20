@@ -9,7 +9,7 @@ import Foundation
 
 final class NetworkManager {
     
-    private let baseURLString = "http://newsapi.org/v2/"
+    private let baseURLString = "https://newsapi.org/v2/"
     private let usTopHeadline = "top-headlines?country=us"
     
     func getNews(completion: @escaping ([News]?) -> Void) {
@@ -30,6 +30,22 @@ final class NetworkManager {
             newsResponse == nil ? completion(nil) : completion(newsResponse!.articles)
         }.resume()
         
+    }
+    
+    func getImage(urlString: String, completion: @escaping (Data?) -> Void) {
+        guard let url = URL(string: urlString) else {
+            completion(nil)
+            return
+        }
+        
+        URLSession.shared.dataTask(with: url) { (data, response, error) in
+            guard error == nil, let data = data else {
+                completion(nil)
+                return
+            }
+            
+            completion(data)
+        }.resume()
     }
     
 }
