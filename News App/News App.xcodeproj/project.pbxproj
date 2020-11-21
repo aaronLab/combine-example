@@ -22,6 +22,8 @@
 		A4B350072567F4D000796114 /* News_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B350062567F4D000796114 /* News_AppUITests.swift */; };
 		A4B350202567F6A000796114 /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B3501F2567F6A000796114 /* Env.swift */; };
 		A4B350282567F84700796114 /* env.txt in Resources */ = {isa = PBXBuildFile; fileRef = A4B350272567F84700796114 /* env.txt */; };
+		A4CA71FD25690BB800266B24 /* NewsHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4CA71FC25690BB800266B24 /* NewsHome.swift */; };
+		A4FF9F41256906C000D747D2 /* NewsListHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FF9F40256906C000D747D2 /* NewsListHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A4B350082567F4D000796114 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4B3501F2567F6A000796114 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 		A4B350272567F84700796114 /* env.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = env.txt; sourceTree = "<group>"; };
+		A4CA71FC25690BB800266B24 /* NewsHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsHome.swift; sourceTree = "<group>"; };
+		A4FF9F40256906C000D747D2 /* NewsListHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsListHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				A4B34FE82567F4CF00796114 /* ContentView.swift */,
+				A4FF9F40256906C000D747D2 /* NewsListHeader.swift */,
+				A4CA71FC25690BB800266B24 /* NewsHome.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -337,6 +343,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4B34FE52567F4CF00796114 /* AppDelegate.swift in Sources */,
+				A4FF9F41256906C000D747D2 /* NewsListHeader.swift in Sources */,
 				A4B350202567F6A000796114 /* Env.swift in Sources */,
 				A4B34FE72567F4CF00796114 /* SceneDelegate.swift in Sources */,
 				A46AF9EE2567FC37009C8BE9 /* NetworkManager.swift in Sources */,
@@ -344,6 +351,7 @@
 				A46AF9FB2567FF5C009C8BE9 /* NewsListVM.swift in Sources */,
 				A46AF9E82567FB15009C8BE9 /* API.swift in Sources */,
 				A4B34FE92567F4CF00796114 /* ContentView.swift in Sources */,
+				A4CA71FD25690BB800266B24 /* NewsHome.swift in Sources */,
 				A46AF9F62567FE5E009C8BE9 /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
