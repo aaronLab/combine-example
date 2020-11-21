@@ -15,6 +15,7 @@ struct NewsListHeader: View {
                 Image(systemName: "largecircle.fill.circle")
                 Text("News")
                     .bold()
+                Spacer()
             } //: HSTACK
             .foregroundColor(.black)
             .font(.largeTitle)
@@ -25,11 +26,5 @@ struct NewsListHeader: View {
         } //: VSTACK
         .padding(.horizontal)
         .padding(.vertical, 10)
-    }
-}
-
-struct NewsListHeader_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsListHeader()
     }
 }

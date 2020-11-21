@@ -17,15 +17,10 @@ struct NewsHome: View {
     var body: some View {
         VStack {
             NewsListHeader()
+            NewsListView(newsCollection: self.newsListVM.news, imageData: self.newsListVM.imageData)
         } //: VSTACK
         .onAppear {
             newsListVM.load()
         }
-    }
-}
-
-struct NewsHome_Previews: PreviewProvider {
-    static var previews: some View {
-        NewsHome()
     }
 }
