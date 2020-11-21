@@ -49,5 +49,11 @@ struct NewsCell: View {
             }
             
         } //: VSTACK
+        .sheet(isPresented: $isPresented) {
+            NewsArticleWebView(newsURL: self.news.url)
+        }
+        .onTapGesture {
+            self.isPresented.toggle()
+        }
     }
 }
