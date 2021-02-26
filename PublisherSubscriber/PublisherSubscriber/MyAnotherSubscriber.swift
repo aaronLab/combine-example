@@ -1,5 +1,5 @@
 //
-//  MySubscriber.swift
+//  MyAnotherSubscriber.swift
 //  PublisherSubscriber
 //
 //  Created by Aaron Lee on 2021/02/26.
@@ -8,44 +8,39 @@
 import Foundation
 import Combine
 
-final class MySubscriber: Subscriber {
+final class MyAnotherSubscriber: Subscriber {
     
     typealias Input = String
     typealias Failure = Never
     
+    var subscription: Subscription?
+    
     /**
-     unlimited: 무제한
-     max: 갯수 재한
-     none: max(0), no elements
+     Start to Subscribe
      */
     func receive(subscription: Subscription) {
-        print("start to subscribe")
         subscription.request(.max(2))
+        
+        self.subscription = subscription
     }
     
     /**
-     값을 받았을 때
+     Got a value
      */
     func receive(_ input: String) -> Subscribers.Demand {
-        print("from input: \(input)")
-        
         switch input {
-        
         case "Aaron":
             return .max(1)
-            
         default:
             return .none
-            
         }
-        
     }
     
-    /*
-     완료되었을 때
+    /**
+     Finished
      */
     func receive(completion: Subscribers.Completion<Never>) {
-        print("finished subscribing", completion)
+        
     }
     
 }
